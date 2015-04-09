@@ -1,0 +1,22 @@
+{
+  "name": "SolarImpulse2",
+  "private": true,
+  "dependencies": {
+    "webcomponentsjs": "Polymer/webcomponentsjs#^0.5.0",
+    "code-mirror": "PolymerLabs/code-mirror#^0.5.0",
+    "github-elements": "PolymerLabs/github-elements#^0.5.0",
+    "x-meta": "PolymerLabs/x-meta#^0.5.0",
+    "inspector-elements": "PolymerLabs/inspector-elements#^0.5.0",
+    "core-elements": "Polymer/core-elements#^0.5.0",
+    "paper-elements": "Polymer/paper-elements#^0.5.0",
+    "paper-calculator": "Polymer/paper-calculator#^0.5.0",
+    "topeka-elements": "Polymer/topeka-elements#^0.5.0",
+    "more-elements": "Polymer/more-elements#^0.5.0"
+  },
+  "version": "0.1",
+  "resolutions": {
+    "webcomponentsjs": "master",
+    "layout": "master",
+    "polymer": "0.5"
+  }
+}

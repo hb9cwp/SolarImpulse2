@@ -11,7 +11,8 @@
     "paper-elements": "Polymer/paper-elements#^0.5.0",
     "paper-calculator": "Polymer/paper-calculator#^0.5.0",
     "topeka-elements": "Polymer/topeka-elements#^0.5.0",
-    "more-elements": "Polymer/more-elements#^0.5.0"
+    "more-elements": "Polymer/more-elements#^0.5.0",
+    "flightpanel-speed": "hb9cwp/flightpanel-speed#master"
   },
   "version": "0.1",
   "resolutions": {

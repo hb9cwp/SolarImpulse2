@@ -50,19 +50,25 @@
       <core-header-panel mode="seamed" id="core_header_panel" navigation flex>
         <core-toolbar id="core_toolbar"></core-toolbar>
         <core-menu valueattr="label" id="core_menu" theme="core-light-theme">
-          <core-item id="core_item" icon="settings" label="Item1" horizontal center layout></core-item>
-          <core-item id="core_item1" icon="settings" label="Item2" horizontal center layout></core-item>
+          <core-item id="live_item" icon="settings" label="Live" horizontal center layout></core-item>
+          <core-item id="replay_item" icon="settings" label="Replay" horizontal center layout></core-item>
+          <core-item id="about_item" icon="settings" label="About" horizontal center layout></core-item>
         </core-menu>
       </core-header-panel>
-      <div id="div" tool>Title</div>
-      <flightpanel-speed speed="22"></flightpanel-speed>
+      <div id="div" tool>SolarImpulse2 HB-SIB Cockpit</div>
+      <flightpanel-speed speed="3"></flightpanel-speed>
+      <sc-sse stream="https://si2.crosscom.ch/sse" channel="si2" alias="seconds"></sc-sse>
     </core-scaffold>
   </template>
 
   <script>
 
     Polymer({
-      
+      var sse = document.querySelector('sc-sse');
+      sse.addEventListener('sc-sse-response', function(e) {
+        console.log("Event: " + e.detail.response);
+        console.log("Alias: " + e.detail.alias);
+      });
     });
 
   </script>

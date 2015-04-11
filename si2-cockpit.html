@@ -64,11 +64,13 @@
   <script>
 
     Polymer({
-      var sse = document.querySelector('sc-sse');
-      sse.addEventListener('sc-sse-response', function(e) {
-        console.log("Event: " + e.detail.response);
-        console.log("Alias: " + e.detail.alias);
-      });
+      ready: function () {
+        var sse = this.shadowRoot.querySelector('sc-sse');
+        sse.addEventListener('sc-sse-response', function(e) {
+          console.log("Event: " + e.detail.response);
+          console.log("Alias: " + e.detail.alias);
+        });
+      }
     });
 
   </script>

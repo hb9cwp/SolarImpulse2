@@ -12,7 +12,7 @@
     "paper-calculator": "Polymer/paper-calculator#^0.5.0",
     "topeka-elements": "Polymer/topeka-elements#^0.5.0",
     "more-elements": "Polymer/more-elements#^0.5.0",
-    "sc-sse": "horacioibrahim/sc-sse#master",
+    "sc-sse": "siscomando/sc-sse#master",
     "flightpanel-speed": "hb9cwp/flightpanel-speed#master"
   },
   "version": "0.1",
